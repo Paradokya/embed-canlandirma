@@ -33,11 +33,11 @@ function FooterButton(props) {
   return <Button {...props} className='shadow-1 shadow-hover-2 shadow-up-hover' />;
 }
 
-const initialContent = 'Peki bunun `markdown` __kütüphanesini__ **desteklediğini** *biliyor* ~~muydunuz?~~ 😃 ```js\nfunction foo(bar) {\n  console.log(bar);\n}\n\nfoo(1);```';
+const initialContent = 'Peki bunun `markdown` __kutuphanesini__ **destekledigini** *biliyor* ~~muydunuz?~~ 😃 ```js\nfunction foo(bar) {\n  console.log(bar);\n}\n\nfoo(1);```';
 const initialColor = Math.floor(Math.random() * 0xFFFFFF);
 const initialEmbed = {
-  title: 'başlık ~~(peki bunun desteklediğini biliyor muydunuz?)~~',
-  description: 'aynı zamanda [linkleride](https://discordapp.com) destekliyor. ```\nevet, kod blokları dahil```',
+  title: 'başlık ~~(peki bunun destekledigini biliyor muydunuz?)~~',
+  description: 'ayni zamanda [linkleride](https://discordapp.com) destekliyor. ```\nevet, kod blokları dahil```',
   url: 'https://discordapp.com',
   color: initialColor,
   timestamp: new Date().toISOString(),
@@ -45,16 +45,16 @@ const initialEmbed = {
   thumbnail: { url: 'https://cdn.discordapp.com/embed/avatars/0.png' },
   image: { url: 'https://cdn.discordapp.com/embed/avatars/0.png' },
   author: {
-    name: 'kullanıcı adı',
+    name: 'kullanici adi',
     url: 'https://discordapp.com',
     icon_url: 'https://cdn.discordapp.com/embed/avatars/0.png'
   },
   fields: [
     { name: '🤔', value: 'yoksa bu o mu' },
     { name: '😱', value: 'evet emojiler!' },
-    { name: '🙄', value: 'hemde hatalardan arındırılmış' },
-    { name: '<:thonkang:219069250692841473>', value: 'yaşasın!', inline: true },
-    { name: '<:thonkang:219069250692841473>', value: 'sıralı satırlar...', inline: true }
+    { name: '🙄', value: 'hemde hatalardan arindirilmis' },
+    { name: '<:thonkang:219069250692841473>', value: 'yasasin!', inline: true },
+    { name: '<:thonkang:219069250692841473>', value: 'sirali satirlar...', inline: true }
   ]
 };
 
@@ -192,8 +192,8 @@ const App = React.createClass({
   render() {
     const webhookModeLabel = `Webhook modunu ${this.state.webhookMode ? 'pasif' : 'aktif'}leştir`;
     const themeLabel = `${this.state.darkTheme ? 'Beyaz' : 'Siyah'} tema`;
-    const compactModeLabel = `${this.state.compactMode ? 'Geniş' : 'Sıkıştırılmış'} mod`;
-    const colorPickerLabel = `Renk paletini ${!this.state.colorPickerShowing ? 'aç' : 'kapat'}`;
+    const compactModeLabel = `${this.state.compactMode ? 'Genis' : 'Sıkıştırılmış'} mod`;
+    const colorPickerLabel = `Renk paletini ${!this.state.colorPickerShowing ? 'ac' : 'kapat'}`;
 
     const colorPicker = this.state.colorPickerShowing ? (
       <div style={{
@@ -233,7 +233,7 @@ const App = React.createClass({
           </section>
 
           <footer className='w-100 pa3 tc white'>
-            <FooterButton label='Kodu oluştur' onClick={this.openCodeModal} />
+            <FooterButton label='Kodu olustur' onClick={this.openCodeModal} />
             <div style={{ position: 'relative', display: 'inline-block' }}>
               <FooterButton label={colorPickerLabel} onClick={this.openColorPicker} />
               {colorPicker}
@@ -241,7 +241,7 @@ const App = React.createClass({
             <FooterButton label={webhookModeLabel} onClick={this.toggleWebhookMode} />
             <FooterButton label={themeLabel} onClick={this.toggleTheme} />
             <FooterButton label={compactModeLabel} onClick={this.toggleCompactMode} />
-            <FooterButton label='Hakkında' onClick={this.openAboutModal} />
+            <FooterButton label='Hakkinda' onClick={this.openAboutModal} />
           </footer>
         </div>
 
