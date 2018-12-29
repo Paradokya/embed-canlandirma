@@ -190,10 +190,10 @@ const App = React.createClass({
   },
 
   render() {
-    const webhookModeLabel = `${this.state.webhookMode ? 'Dis' : 'En'}able webhook mode`;
-    const themeLabel = `${this.state.darkTheme ? 'Light' : 'Dark'} theme`;
-    const compactModeLabel = `${this.state.compactMode ? 'Cozy' : 'Compact'} mode`;
-    const colorPickerLabel = `${!this.state.colorPickerShowing ? 'Open' : 'Close'} color picker`;
+    const webhookModeLabel = `Webhook modunu ${this.state.webhookMode ? 'pasif' : 'aktif'}leştir`;
+    const themeLabel = `${this.state.darkTheme ? 'Beyaz' : 'Siyah'} tema`;
+    const compactModeLabel = `${this.state.compactMode ? 'Geniş' : 'Sıkıştırılmış'} mod`;
+    const colorPickerLabel = `Renk paletini ${!this.state.colorPickerShowing ? 'aç' : 'kapat'}`;
 
     const colorPicker = this.state.colorPickerShowing ? (
       <div style={{
@@ -233,7 +233,7 @@ const App = React.createClass({
           </section>
 
           <footer className='w-100 pa3 tc white'>
-            <FooterButton label='Generate code' onClick={this.openCodeModal} />
+            <FooterButton label='Kodu oluştur' onClick={this.openCodeModal} />
             <div style={{ position: 'relative', display: 'inline-block' }}>
               <FooterButton label={colorPickerLabel} onClick={this.openColorPicker} />
               {colorPicker}
@@ -241,7 +241,7 @@ const App = React.createClass({
             <FooterButton label={webhookModeLabel} onClick={this.toggleWebhookMode} />
             <FooterButton label={themeLabel} onClick={this.toggleTheme} />
             <FooterButton label={compactModeLabel} onClick={this.toggleCompactMode} />
-            <FooterButton label='About' onClick={this.openAboutModal} />
+            <FooterButton label='Hakkında' onClick={this.openAboutModal} />
           </footer>
         </div>
 
