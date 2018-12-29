@@ -8,7 +8,7 @@ import logo from '../images/logo.png';
 const GITHUB_REPO = 'https://github.com/leovoel/embed-visualizer';
 
 const aboutText = `
--= Visualizer and validator for [Discord embeds][embed-docs]. =-
+-= Visualizer and validator wqeeeeeeeefor [Discord embeds][embed-docs]. =-
 
 ----------------------------------------------------------------
 
