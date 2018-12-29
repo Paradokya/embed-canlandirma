@@ -1,10 +1,10 @@
 {
-  "name": "embed-çalıştırıcı",
-  "author": "leovoel",
+  "name": "embed-canlandirma",
+  "author": "paradokya",
   "license": "MIT",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://paradokya.github.io/embed-çalıştırıcı/",
+  "homepage": "https://paradokya.github.io/embed-canlandirma/",
   "devDependencies": {
     "react-scripts": "0.8.5",
     "rimraf": "^2.5.4"
