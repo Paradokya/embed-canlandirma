@@ -33,7 +33,7 @@ function FooterButton(props) {
   return <Button {...props} className='shadow-1 shadow-hover-2 shadow-up-hover' />;
 }
 
-const initialContent = 'Bunun `markdown` __kütüphanesini__ **desteklediğini** *biliyor* ~~muydunuz?~~ 😃 ```js\nfunction foo(bar) {\n  console.log(bar);\n}\n\nfoo(1);```';
+const initialContent = 'Peki bunun `markdown` __kütüphanesini__ **desteklediğini** *biliyor* ~~muydunuz?~~ 😃 ```js\nfunction foo(bar) {\n  console.log(bar);\n}\n\nfoo(1);```';
 const initialColor = Math.floor(Math.random() * 0xFFFFFF);
 const initialEmbed = {
   title: 'başlık ~~(peki bunun desteklediğini biliyor muydunuz?)~~',
